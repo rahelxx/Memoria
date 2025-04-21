@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria</title> 
+    <link rel="stylesheet" href="how.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Memoria</h1>
+            <ul class="nav-links">
+                <li><a href="Home2.html">Home</a></li>
+                <li><a href="About1.html">About us</a></li>
+                <li><a href="How it works.html">Make Your Code</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="image-conta">
+        <img src="images/2.jpg" alt="Main Image">
+    </div>
+
+    <div class="main-content-container">
+        <h1 class="page-title">Make Your Code</h1>
+        
+        <div class="main-box">
+            <div id="main-page">
+                <div class="instruction-box">
+                    <p>Create unique code by clicking the button below</p>
+                </div>
+                <div id="code-section" class="code-section">
+                  <div class="input-group">
+                      <input type="text" id="filename-input" placeholder="Enter file name">
+                      <p id="filename-error-message" class="error-message"></p>
+                      <button id="generate-btn" class="pink-btn">Generate Code</button>
+                  </div>
+                  <p id="error-message" class="error-message"></p>
+                  <div id="code-display"></div>
+                  <div class="button-group">
+                </div>
+                </div>
+  
+            </div>
+            <div class="input-group">
+              <input type="text" id="code-input" placeholder="Enter the code here">
+              <button id="submit-btn" class="pink-btn">Enter Code</button>
+          </div>
+          
+            <div id="upload-page" class="upload-section">
+                <h2>Upload Photos</h2>
+                <div class="upload-area">
+                    <input type="file" id="image-upload" accept="image/*" multiple>
+                    <button id="upload-btn" class="pink-btn">Upload Photos</button>
+                    <button id="view-gallery-btn" class="pink-btn">View Gallery</button>
+                </div>
+            </div>
+        
+            <div id="gallery-page" class="gallery-section">
+                <h2>Photo Gallery</h2>
+                <button id="download-all-btn" class="pink-btn download-btn">Download All Photos</button>
+                <div id="image-container" class="image-grid"></div>
+                <button id="back-btn" class="pink-btn">Back to Homepage</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="How It Works.js"></script>
+</body>
+</html>

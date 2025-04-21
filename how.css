@@ -1,0 +1,330 @@
+/* إعدادات الصفحة */
+body {
+    background-color: #FFFDFD;
+    margin: 0;
+    padding: 0;
+}
+
+/* التنسيق للشريط العلوي */
+.navbar {
+    background-color: #ffd3eb;
+    color: #ffffff;
+    padding: 15px 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+
+/* التنسيق للصورة الرئيسية */
+.image-conta {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-conta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* التنسيق للمحتوى الرئيسي */
+.main-content-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 42px;
+    color: #ff66a3;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* صندوق المحتوى */
+.main-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+    border: 1px solid #ffe6f2;
+}
+
+/* تعليمات الاستخدام */
+.instruction-box {
+    background-color: #fff9fb;
+    border-left: 4px solid #ffb6d9;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* الأزرار */
+.pink-btn {
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 15px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 3px 6px rgba(255, 182, 217, 0.3);
+}
+
+.pink-btn:hover {
+    background-color: #ff8cc3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 140, 195, 0.4);
+}
+
+/* تنسيق الحقول */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+/* التنسيق لحقل إدخال الكود */
+#code-input {
+    padding: 15px 20px;
+    border: 1px solid #ffd3eb;
+    border-radius: 10px;
+    width: 250px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+#code-input:focus {
+    border-color: #ff8cc3;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 182, 217, 0.3);
+}
+
+/* عرض الكود */
+.code-display {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff66a3;
+    margin: 25px 0;
+    letter-spacing: 2px;
+    background-color: #fff0f5;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    min-width: 250px;
+}
+
+/* الرسائل الخطأ */
+.error-message {
+    color: #ff4d4d;
+    margin: 15px 0;
+    font-size: 16px;
+    min-height: 20px;
+}
+
+/* قسم المعرض ورفع الصور */
+.gallery-section, .upload-section {
+    display: none;
+    margin-top: 30px;
+    animation: fadeIn 0.5s ease;
+}
+
+/* منطقة رفع الصور */
+.upload-area {
+    background-color: #fff9fb;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px dashed #ffd3eb;
+    margin: 20px 0;
+}
+
+/* شبكة الصور */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #fff9fb;
+    border-radius: 15px;
+}
+
+/* تنسيق الصور */
+.image-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* زر تنزيل الصور */
+.download-btn {
+    background-color: #ff66a3;
+    margin-bottom: 25px;
+    padding: 12px 25px;
+    font-size: 16px;
+}
+
+.download-btn:hover {
+    background-color: #e83f8e;
+}
+
+/* الأنيميشن */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* تنسيقات شاشات الهاتف */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        margin-top: 15px;
+        gap: 15px;
+    }
+    
+    .main-box {
+        padding: 25px;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    #code-input {
+        width: 100%;
+    }
+    
+    .page-title {
+        font-size: 32px;
+    }
+    
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Code section styles */
+#code-section {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #fff0f5;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    padding: 15px 20px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    border: 1px solid #ffd3eb;
+    border-radius: 10px;
+}
+
+.pink-btn {
+    background-color: #ffb6d9;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.pink-btn:hover {
+    background-color: #ff8cc3;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+#code-display {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff66a3;
+    margin-top: 25px;
+    background-color: #fff0f5;
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: inline-block;
+    min-width: 250px;
+}

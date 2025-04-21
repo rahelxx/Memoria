@@ -1,0 +1,166 @@
+/* Background */
+body {
+    background-color: #FFFDFD; /* Snow white */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffd3eb; 
+    color: #ffffff;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e797c2; /* Soft pink */
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #FFFDFD;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* حق About Us */
+h1 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 30px;
+    color: #f0a3cc; /* لون وردي */
+}
+
+/* الكلام حق اباوت اس */
+h3 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 18px;
+    color: #f8cee5; /* وردي فاتح */
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 1.6;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 300;
+}
+
+/* الكلام حق اباوت اس */
+h5 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 18px;
+    color: #f8cee5; /* وردي فاتح */
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 1.6;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 300;
+}
+
+/* حق صور الاعمال */
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #F7C5E0; /* وردي فاتح */
+}
+
+.image-gallery img {
+    width: 470px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* حق الصوره المستطيله */
+.image-conta {
+    width: 100%;
+    max-width: 1600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.image-conta img {
+    width: 100%;
+    aspect-ratio: 25 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.question-section {
+    background-color: #FFF3F9; /* وردي فاتح */
+    border-radius: 30px;
+    width: 90%;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+/* حق الحقوق */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffd3eb; /* وردي فاتح */
+    font-size: 18px;
+}
+
+footer p {
+    margin: 0;
+    color: #f0a3cc; /* لون وردي */
+}
